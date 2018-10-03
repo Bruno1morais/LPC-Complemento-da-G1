@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+    <h1>Estatísticas dos orçamentos</h1>
+</head>
+<body>
+<p>
+    <b>Quantidade de orçamento(s):</b>{{ quantidade }}
+</p>
+<p>
+     <b>Orçamento com maior custo:</b> {{orcamento_maior_custo.cliente.nome}}
+     ,data {{ orcamento_maior_custo.data_hora }}, custo de R$ {{orcamento_maior_custo.custo_total}}.
+</p>
+<p>
+    <b>Orçamento com menor custo:</b>{{orcamento_menor_custo.cliente.nome}}, 
+    data {{ orcamento_menor_custo.data_hora }}, custo de R$ {{orcamento_menor_custo.custo_total}}.
+</p>
+<p>
+    <b>Média do custo total dos orçamentos</b>R$ {{ media_custo_total }}.
+</p>
+</body>
